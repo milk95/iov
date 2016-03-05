@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ 
+<resources> 
+    <dimen name="edittext_width">100px</dimen>
+ 
+    <dimen name="edittext_height">120px</dimen> 
+    
+    <dimen name="button_width">100px</dimen>
+    
+    <dimen name="button_height">150px</dimen>
+ 
+</resources>
