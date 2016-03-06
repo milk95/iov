@@ -25,6 +25,12 @@
         <activity 
             android:name="com.iov.app.activity.FeaturePage">
         </activity>
+        <activity 
+            android:name="com.iov.app.activity.InfoBunding">
+        </activity>
+        <activity 
+            android:name="com.iov.app.activity.VehicleService">
+        </activity>
     </application>
 
 </manifest>

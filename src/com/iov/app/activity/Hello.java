@@ -43,8 +43,4 @@ public class Hello extends BaseActivity implements OnClickListener{
 		intent.setClass(this, FeaturePage.class);
 		startActivity(intent);
 	}
-	
-	
-	
-	
 }

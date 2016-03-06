@@ -1,5 +1,6 @@
 package com.iov.app.activity;
 
+import com.iov.app.manager.ActivityCollector;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,5 +15,13 @@ public class BaseActivity extends Activity{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		Log.d("BaseActivity", getClass().getSimpleName());           //打印log日志，当前执行的类
+		ActivityCollector.addActivity(this);                              //将当前活动加入活动管理List中
+	}
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		ActivityCollector.finishAll();                                       	//结束所有活动
 	}
 }
