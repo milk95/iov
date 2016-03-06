@@ -61,6 +61,7 @@ public class FeaturePage extends BaseActivity implements OnClickListener{
 					Intent addInfoIntent=new Intent();
 					addInfoIntent.setClass(this, InfoBunding.class);
 					startActivity(addInfoIntent);
+					break;
 				}
 				
 				case R.id.reserve_bt:{
@@ -75,6 +76,7 @@ public class FeaturePage extends BaseActivity implements OnClickListener{
 					Intent serviceIntent=new Intent();
 					serviceIntent.setClass(this, InfoBunding.class);
 					startActivity(serviceIntent);
+					break;
 				}
 				
 				case R.id.query_bt:{
