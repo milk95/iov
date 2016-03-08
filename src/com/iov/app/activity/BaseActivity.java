@@ -18,10 +18,4 @@ public class BaseActivity extends Activity{
 		ActivityCollector.addActivity(this);                              //将当前活动加入活动管理List中
 	}
 	
-	@Override
-	protected void onDestroy() {
-		// TODO Auto-generated method stub
-		super.onDestroy();
-		ActivityCollector.finishAll();                                       	//结束所有活动
-	}
 }

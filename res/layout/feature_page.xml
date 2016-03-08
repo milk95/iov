@@ -10,12 +10,12 @@
         android:layout_weight="2" >
 
         <Button
-            android:id="@+id/add_info_bt"
+            android:id="@+id/check_info_bt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="Add" />
+            android:text="Check" />
     </RelativeLayout>
 
     <TableLayout

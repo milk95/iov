@@ -17,7 +17,7 @@ public class FeaturePage extends BaseActivity implements OnClickListener{
 	/*
 	 *  声明控件对象
 	 */
-	private Button addInfoBt;
+	private Button checkInfoBt;
 	private Button reserveBt;
 	private Button locateBt;
 	private Button serviceBt;
@@ -34,7 +34,7 @@ public class FeaturePage extends BaseActivity implements OnClickListener{
 		 /*
 		  *  初始化控件对象
 		  */
-		 addInfoBt=(Button) findViewById(R.id.add_info_bt);
+		 checkInfoBt=(Button) findViewById(R.id.check_info_bt);
 		 reserveBt=(Button) findViewById(R.id.reserve_bt);
 		 locateBt=(Button) findViewById(R.id.locate_bt);
 		 serviceBt=(Button) findViewById(R.id.service_bt);
@@ -43,7 +43,7 @@ public class FeaturePage extends BaseActivity implements OnClickListener{
 		 /*
 		  *  监听按钮控件
 		  */
-		 addInfoBt.setOnClickListener(this);
+		 checkInfoBt.setOnClickListener(this);
 		 reserveBt.setOnClickListener(this);
 		 locateBt.setOnClickListener(this);
 		 serviceBt.setOnClickListener(this);
@@ -57,10 +57,10 @@ public class FeaturePage extends BaseActivity implements OnClickListener{
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 				switch(v.getId()){	
-				case R.id.add_info_bt:{
-					Intent addInfoIntent=new Intent();
-					addInfoIntent.setClass(this, InfoBunding.class);
-					startActivity(addInfoIntent);
+				case R.id.check_info_bt:{
+					Intent checkInfoIntent=new Intent();
+					checkInfoIntent.setClass(this, CheckInfo.class);
+					startActivity(checkInfoIntent);
 					break;
 				}
 				
@@ -74,7 +74,7 @@ public class FeaturePage extends BaseActivity implements OnClickListener{
 				
 				case R.id.service_bt:{
 					Intent serviceIntent=new Intent();
-					serviceIntent.setClass(this, InfoBunding.class);
+					serviceIntent.setClass(this, VehicleService.class);
 					startActivity(serviceIntent);
 					break;
 				}

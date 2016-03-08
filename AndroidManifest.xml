@@ -26,10 +26,13 @@
             android:name="com.iov.app.activity.FeaturePage">
         </activity>
         <activity 
-            android:name="com.iov.app.activity.InfoBunding">
+            android:name="com.iov.app.activity.VehicleService">
         </activity>
         <activity 
-            android:name="com.iov.app.activity.VehicleService">
+            android:name="com.iov.app.activity.CheckInfo">
+        </activity>
+        <activity 
+            android:name="com.iov.app.activity.VehicleInfoEdit">
         </activity>
     </application>
 
