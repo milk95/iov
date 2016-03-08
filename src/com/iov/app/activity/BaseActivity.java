@@ -17,5 +17,5 @@ public class BaseActivity extends Activity{
 		Log.d("BaseActivity", getClass().getSimpleName());           //打印log日志，当前执行的类
 		ActivityCollector.addActivity(this);                              //将当前活动加入活动管理List中
 	}
-	
+	//
 }
