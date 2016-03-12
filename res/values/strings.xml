@@ -4,4 +4,8 @@
     <string name="app_name">IOV</string>
     <string name="hello_world">Hello world!</string>
 
+    <string name="skin_tabbar_icon_auth">车况</string>
+    <string name="skin_tabbar_icon_at">预约加油</string>
+    <string name="skin_tabbar_icon_space">查询</string>
+    <string name="skin_tabbar_icon_more">我</string>
 </resources>

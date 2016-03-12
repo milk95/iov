@@ -4,6 +4,7 @@ import com.iov.app.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View.OnClickListener;
 import android.view.View;
 import android.view.Window;
@@ -40,7 +41,13 @@ public class Hello extends BaseActivity implements OnClickListener{
 	public void onClick(View view) {
 		// TODO Auto-generated method stub
 		Intent intent=new Intent();
-		intent.setClass(this, FeaturePage.class);
+		intent.setClass(this, PrimaryPage.class);
 		startActivity(intent);
+	}
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
 	}
 }

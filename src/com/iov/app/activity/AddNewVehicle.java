@@ -3,7 +3,6 @@ package com.iov.app.activity;
 import java.util.ArrayList;
 import java.util.List;
 import com.iov.app.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,35 +10,37 @@ import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class CheckInfo extends BaseActivity implements android.widget.AdapterView.OnItemSelectedListener{
+public class AddNewVehicle extends Activity implements OnItemSelectedListener{
 
 	/*
 	 * 声明控件对象
 	 */
-	private Spinner vehicleSpinner;
+	private Spinner brandSpinner;
 	private Button backBt;
 	private Button addBt;
 	
 	private List<String>  dataList;
 	private ArrayAdapter<String> adapter;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.check_info_page);
-
-        /*
+		setContentView(R.layout.add_new_vehicle_page);
+		
+		/*
          *  初始化控件对象
          */
-        vehicleSpinner=(Spinner) findViewById(R.id.vehicle_choice_spinner);
-        backBt=(Button) findViewById(R.id.title_back_bt);
-        addBt=(Button) findViewById(R.id.title_add_bt);
+        brandSpinner=(Spinner) findViewById(R.id.vehicle_brand_spinner);
+        backBt=(Button) findViewById(R.id.add_vehicle_back_bt);
+        addBt=(Button) findViewById(R.id.add_vehicle_save);
         
         
         /*
@@ -59,7 +60,7 @@ public class CheckInfo extends BaseActivity implements android.widget.AdapterVie
         /*
          *  加载适配器
          */
-        vehicleSpinner.setAdapter(adapter);
+        brandSpinner.setAdapter(adapter);
         /*
          *  设置监听器
          */
@@ -78,10 +79,9 @@ public class CheckInfo extends BaseActivity implements android.widget.AdapterVie
             		startActivity(intent);
             }
         });
-        vehicleSpinner.setOnItemSelectedListener(this);
+        brandSpinner.setOnItemSelectedListener(this);
 	}
 	
-	@Override
 	public void onItemSelected(AdapterView<?> parent, View v, int position,
 			long id) {
 		// TODO Auto-generated method stub
@@ -94,13 +94,3 @@ public class CheckInfo extends BaseActivity implements android.widget.AdapterVie
 		
 	}
 }
-
-
-
-
-
-
-
-
-
-
